@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SpotifyWeb</title>
+    <script src="https://kit.fontawesome.com/e135036bae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
 
         <aside class="sidebar">
-            <div class="logo">
+            <div class="list">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo spotify">
+                </div>
 
+                <div class="side-menu">
+                    <div class="item"><img src="img/home.svg" alt=""><span> Home</span></div>
+                    <div class="item"><img src="img/search.svg" alt=""><span> Cerca</span></div>
+                    <div class="item"><img src="img/libreria.svg" alt=""><span>La Tua Libreria</span></div>
+                </div>
+
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <div class="crea-pl">
+                        <i class="fas fa-plus-square fa-3x"></i><span> Crea Playlist</span>
+                    </div>
+                    <div class="all-pl">
+                        <ul>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <div class="side-menu">
-
-            </div>
-
-            <div class="playlist">
-
-            </div>
-
-            <div class="user">
-
+            <div id="user">
+                <div class="install">
+                    <i class="far fa-user-circle"></i><span> Installa app</span>
+                </div>
+                <div class="profile">
+                    <img src="img/profile.svg" alt="">
+                    <span> John Doe</span>
+                </div>
             </div>
 
         </aside>
@@ -33,27 +58,141 @@
             <div class="call-to-action">
 
                 <div class="btn">
-
+                    <a href="#">EFFETTUA L'UPGRADE</a>
                 </div>
 
             </div>
 
             <div class="content">
 
-                <nav class="main-menu">
+                <nav>
+                    <ul class="main-menu">
+                        <li>
+                            <div><span>IN EVIDENZA</span></div>
+                        </li>
 
+                        <li>
+                            <div><span>PODCAST</span></div>
+                        </li>
+
+                        <li>
+                            <div><span>CLASSIFICHE</span></div>
+                        </li>
+
+                        <li>
+                            <div><span>GENERI E MOOD</span></div>
+                        </li>
+
+                        <li>
+                            <div><span>NUOVE USCITE</span></div>
+                        </li>
+
+                        <li>
+                            <div><span>SCOPRI</span></div>
+                        </li>
+                    </ul>
                 </nav>
 
                 <div class="recent">
+                    <h2>Recently played</h2>
 
+                    <div class="albums">
+
+                        <div class="box">
+
+                            <div class="record">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <h4>Heavy Metal</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+
+                            <div class="record">
+                                <img src="img/stranger.jpeg" alt="">
+                                <h4>Strangers Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                <h5>Kyle Dixon & Michael Stein</h5>
+                            </div>
+
+                        </div>
+
+                        <div class="box">
+
+                            <div class="record">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <h4>A quiet place</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                            
+                            <div class="record">
+                                <img src="img/split.jpeg" alt="">
+                                <h4>Split</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+
+                        </div>
+
+                        <div class="box">
+
+                            <div class="record">
+                                <img src="img/cure.jpeg" alt="">
+                                <h4>A cure for wellness</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+                            
+                            <div class="record">
+                                <img src="img/sinister.jpeg" alt="">
+                                <h4>Sinister</h4>
+                                <h5>Subtitle</h5>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="creato-per">
 
+                    <h2>Creato per John Doe</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
+
+                    <div class="albums">
+
+                        <div class="box">
+
+                            <div class="record">
+                                <img src="img/radar.jpeg" alt="">
+                                <h4>Release Radar</h4>
+                            </div>
+
+                            <div class="record">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <h4>Daily Mix 1</h4>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <div class="popular">
+                    <h2>Artisti più popolari</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
 
+                    <div class="albums">
+
+                        <div class="box">
+
+                            <div class="record">
+                                <img src="img/youg.jpeg" alt="">
+                            </div>
+
+                            <div class="record">
+                                <img src="img/einaudi.jpeg" alt="">
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
@@ -62,18 +201,56 @@
 
     </div>
 
+    <div class="clearfix"></div>
+
     <footer>
 
         <div class="left-foot">
+            <div class="sezione">
+                <img src="img/sinister.jpeg" alt="">
+                <div class="testo">
+                    <h6>Sinister</h6>
+                    <span>Brano Nome</span>
+                </div>
+            </div>
 
+            <div class="sezione">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
         </div>
 
         <div class="mid-foot">
+
+            <div class="tasti">
+
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle fa-2x"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+
+            </div>
+
+            <div class="barra">
+                <span>0:25</span>
+                <div id="bar-mid-back">
+                    <div id="bar-mid-front"></div>
+                </div>
+                <span>4:35</span>
+
+            </div>
 
         </div>
 
         <div class="right-foot">
 
+            <i class="fas fa-list"></i>
+            <i class="fas fa-tv"></i>
+            <i class="fas fa-volume-up"></i>
+            <div id="bar-dx-back">
+                <div id="bar-dx-front"></div>
+            </div>
         </div>
     </footer>
 </body>
